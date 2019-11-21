@@ -91,7 +91,7 @@ As already mentioned, the 3 main questions for this project were:
 
 
 <a name="cleaning"></a>
-## 6. Wrangling and cleaning
+## 6. Data wrangling and cleaning
 
 Describe your full process of data wrangling and cleaning. Document why you chose to fill missing values, extract outliers, or create the variables you did as well as your reasoning behind the process.
 
@@ -129,8 +129,7 @@ Address any questions you were unable to answer, or any next steps or future ext
 <a name="links"></a>
 ## 11. Links
 
-[Dataset]()
-[Repository](https://github.com/)  
-[Presentation](https://slides.com/)
-[Tableau Dashboards]()
-[Trello](https://trello.com/en)  
+[Dataset](https://www.kaggle.com/ludobenistant/hr-analytics)
+[Repository](https://github.com/Ana-Andre/Predictive-Emplyee-Turnover)  
+[Presentation](https://bit.ly/2r4yBUR)
+[Tableau Dashboards]() 
