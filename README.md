@@ -12,8 +12,8 @@ Lisbon, 11.10.2019*
 - [3. Dataset](#dataset)
 - [4. Workflow](#workflow)
 - [5. Questions](#questions)
-- [6. Cleaning](#cleaning)
-- [7. Analysis](#analysis)
+- [6. Wrangling and cleaning](#cleaning)
+- [7. Exploratory data analysis](#analysis)
 - [8. Model Training and Evaluation](#model-training-and-evaluation)
 - [9. Conclusion](#conclusion)
 - [10. Future Work (ongoing..)](#future-work)
@@ -42,45 +42,63 @@ I used Trello as a project management tool with Kanban methodologies.
 <a name="motivation"></a>
 ## 2. Motivation
 
-A company's success is also built on the people who work there.
+Employee turnover refers to the workers who leave an organization and are replaced by new employees. It can have a harsh impact in a company mainly because:
+- it's very costly to replace an employee (first the separation and then the recruitment, replacement and training of the new employee)
+- it affects produtivity: voids in the workforce mean overwork and stress for the ones staying and it destabilizes both the team and the mood
+- it affects business as it can deteriorate client's satisfaction due to regular changes in consultants which can lead to loss of business with clients.
 
-Employees turnover has a dramatic impact in business mainly because:
-- it's very costly to replace an employee (the separation, the recruitment, the replacement, the training)
-- it affects produtivity: voids in the workforce mean overwork and stress for the ones staying and also because it destabilizes the team and the mood
-- it affects business as it can deteriorate client's satisfaction due to regular changes in consultants and that can lead to loss of business with clients.
+Predictive analysis in human resoures (HR) is a game changer in the industry, either because it can help organizations to take steps and improve the employer-employee relationship before it even becomes a problem (preventing turnover), or as way to measure the business impact of people policies.
 
-Employees engagement is more and more a concern for organizations and human resources analystics holds enormous value for them as it is a way to measure the business impact of people policies.
+By taking unprocessed data and extract actionable insights which can then be applied to everday processes and improve engagement strategies, HR analytics holds enormous values for companies.
 
 
 <a name="dataset"></a>
 ## 3. Dataset
-* Where did you get your data? If you downloaded a dataset (either public or private), describe where you downloaded it and include the command to load the dataset.
-* Did you build your own datset? If so, did you use an API or a web scraper? PRovide the relevant scripts in your repo.
-* For all types of datasets, provide a description of the size, complexity, and data types included in your dataset, as well as a schema of the tables if necessary.
-* If the question cannot be answered with the available data, why not? What data would you need to answer it better?
+
+I got the dataset from [Kaggle](https://www.kaggle.com/ludobenistant/hr-analytics).
+The data has 14 999 samples and 10 features, whose description is given below:
+- satisfaction_level (numeric): employees level of satisfaction (scores from 0 to 1, 0 for totally unsatisfied and 1 for totally satisfied)
+- last_evaluation (numeric): employee's last performance evaluation score (scores from 0 to 1, 0 for null performance and 1 for excelent performance)
+- number_project (numeric): number of projects assigned to the employee
+- average_montly_hours (numeric): average monthly hours at workplace
+- time_spend_company (numeric): years as a companie's employee
+- Work_accident (numeric): whether the employee had a workplace accident (1 for yes or 0 for no)
+- left (numeric): whether the employee left the workplace or not (1 for yes or 0 for no)
+- promotion_last_5years - whether the employee was promoted in the last five years (1 for yes or 0 for no)
+- sales (categorical): department the employee works for
+- salary (categorical): relative level of salary (low, medium, high).
 
 
 <a name="workflow"></a>
 ## 4. Workflow
-Outline the workflow you used in your project. What were the steps?
-How did you test the accuracy of your analysis and/or machine learning algorithm?
+
+In a general way, the worflow for this project was:
+1. choose the topic and find the data
+2. ask the questions
+3. clean the data
+4. exploratory data analysis
+5. create dashboards with Tableau
+6. build the predictive modelling (model training and evaluation).
 
 
 <a name="questions"></a>
 ## 5. Questions
-* What data/business/research/personal question you would like to answer?
-* What is the context for the question and the possible scientific or business application?
-* What are the hypotheses you would like to test in order to answer your question?  
-Frame your hypothesis with statistical/data languages (i.e. define Null and Alternative Hypothesis). You can use formulas if you want but that is not required.
+
+As already mentioned, the 3 main questions for this project were:
+- What's the profile of the workers who left the company?
+- Why did they leave the company?
+- Who are the ones most likely to leave?
 
 
 <a name="cleaning"></a>
-## 6. Cleaning
+## 6. Wrangling and cleaning
+
 Describe your full process of data wrangling and cleaning. Document why you chose to fill missing values, extract outliers, or create the variables you did as well as your reasoning behind the process.
 
 
 <a name="analysis"></a>
-## 7. Analysis
+## 7. Exploratory data analysis
+
 * Overview the general steps you went through to analyze your data in order to test your hypothesis.
 * Document each step of your data exploration and analysis.
 * Include charts to demonstrate the effect of your work.
@@ -89,12 +107,14 @@ Describe your full process of data wrangling and cleaning. Document why you chos
 
 <a name="model-training-and-evaluation"></a>
 ## 8. Model Training and Evaluation
+
 *Include this section only if you chose to include ML in your project.*
 * Describe how you trained your model, the results you obtained, and how you evaluated those results.
 
 
 <a name="conclusion"></a>
 ## 9. Conclusion
+
 * Summarize your results. What do they mean?
 * What can you say about your hypotheses?
 * Interpret your findings in terms of the questions you try to answer.
@@ -102,6 +122,7 @@ Describe your full process of data wrangling and cleaning. Document why you chos
 
 <a name="future-work"></a>
 ## 10. Future Work (ongoing..)
+
 Address any questions you were unable to answer, or any next steps or future extensions to your project.
 
 
